@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test outputs
+coverage/
+*.cover
+*.coverage
+.cache
+nosetests.xml
+*.coveragerc
+
+# Build artifacts
+*.o
+*.py[cod]
+*.pyd
+*.pyo
+*.pyc
+
+# Data and videos
+data/output_video.mp4
+data/output_with_audio.mp4
+
+# Ignore models
+models/__pycache__/
