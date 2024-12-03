@@ -8,7 +8,7 @@ def load_video(video_path):
         ret, frame = cap.read()
         if not ret:
             break
-        if frame is None:  # Handle empty frames
+        if frame is None:
             print("Warning: Skipping an empty frame.")
             continue
         frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
@@ -26,7 +26,6 @@ def save_video(frames, output_path, fps=30):
     out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (width, height))
 
     for frame in frames:
-        # Convert to uint8 if necessary
         if frame.dtype != np.uint8:
             frame = np.clip(frame, 0, 255)  # Ensure values are within range
             frame = frame.astype(np.uint8)
